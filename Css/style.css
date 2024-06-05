@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Karla:ital,wght@0,200..800;1,200..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Seymour+One&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: #000000;
+}
+
+.vm-container {
+  background-image: url(/Assets/Images/vm2.jpg);
+  background-size: cover;
+  padding: 500px;
+  font-family: Arial, sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+.vm-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0) 70%,
+    #8ecae6 100%
+  );
+  pointer-events: none;
+}
+
+.vm-slogan {
+  font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  color: #023047;
+  font-size: 40px;
+  margin: 10px 0;
+  text-shadow: 1px 1px 2px rgba(187, 235, 255, 0.5);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: inline-block;
+  max-width: 100%;
+  white-space: pre-line;
+  background-color: rgba(98, 177, 222, 0.5);
+  padding: 5px 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+.vm-slogan::after {
+  content: "Our Vending Machine,\A Your Money-Generating Machine";
+  white-space: pre-line;
+  display: block;
+}
+
+/* Media Queries */
+
+@media (max-width: 1200px) {
+  .vm-container {
+    padding: 200px;
+  }
+
+  .vm-slogan {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .vm-container {
+    padding: 150px;
+  }
+
+  .vm-slogan {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .vm-container {
+    padding: 100px;
+  }
+
+  .vm-slogan {
+    font-size: 20px;
+  }
+}
+
+.container {
+  width: 100%;
+  min-height: 200px;
+}
